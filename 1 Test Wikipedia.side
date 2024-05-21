@@ -1,0 +1,89 @@
+{
+  "id": "3330a066-f1ea-4f22-b15f-be8007253f5c",
+  "version": "2.0",
+  "name": "1 Test Wikipedia",
+  "url": "https://de.wikipedia.org",
+  "tests": [{
+    "id": "a7322d27-fca8-4293-9846-8b260fa79b7d",
+    "name": "Untitled",
+    "commands": [{
+      "id": "00d99d4b-bc5a-48f5-858c-052e95d9d2bb",
+      "comment": "",
+      "command": "open",
+      "target": "/wiki/Wikipedia:Hauptseite",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7343e6d4-3b35-4371-943a-331a4f5f83a9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x1400",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37638d20-5117-49e9-bfc9-ef7850997f6a",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5227339-94e1-454e-9b23-04ecefc6b26c",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Calanda Broncos"
+    }, {
+      "id": "f770c250-d752-405e-b08f-6055b4a6e24f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7295b306-e503-4454-935f-86c1bfe422ed",
+      "comment": "American Football Team",
+      "command": "verifyText",
+      "target": "css=.mw-page-title-main",
+      "targets": [
+        ["css=.mw-page-title-main", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']/span", "xpath:idRelative"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Calanda Broncos')]", "xpath:innerText"]
+      ],
+      "value": "Calanda Broncos"
+    }]
+  }],
+  "suites": [{
+    "id": "7c863229-5574-4a19-ac5d-0a5b408893ee",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a7322d27-fca8-4293-9846-8b260fa79b7d"]
+  }],
+  "urls": ["https://de.wikipedia.org/"],
+  "plugins": []
+}

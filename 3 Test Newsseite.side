@@ -1,0 +1,109 @@
+{
+  "id": "1d003b7c-ecca-44e0-b994-3458c05ef100",
+  "version": "2.0",
+  "name": "3 Test Newsseite",
+  "url": "https://news.google.com",
+  "tests": [{
+    "id": "3d26ea03-96cb-4d9f-b91a-16961ba44278",
+    "name": "Verschiedene Tests",
+    "commands": [{
+      "id": "c438e49b-f320-4565-8993-326c61a80ac8",
+      "comment": "",
+      "command": "open",
+      "target": "/home?hl=de&gl=DE&ceid=DE:de",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1cfb1e30-bd39-4335-84d5-1c238c09367d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x1400",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36695e1d-7f43-438a-8c7a-c8d0d189a0d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.zRMMZb",
+      "targets": [
+        ["css=.zRMMZb", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc090072-9015-49f6-9ee1-564fdebc71f5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.VfPpkd-Bz112c-RLmnJb:nth-child(4)",
+      "targets": [
+        ["css=.VfPpkd-Bz112c-RLmnJb:nth-child(4)", "css:finder"],
+        ["xpath=//body[@id='yDmH0d']/c-wiz/div/div[2]/main/div[2]/c-wiz/section/div[4]/div/div/div/div[2]/div/span/button/div[3]", "xpath:idRelative"],
+        ["xpath=//span/button/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2852c079-e8ea-452f-9d24-68349d1c12ff",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.VfPpkd-Bz112c-RLmnJb:nth-child(4)",
+      "targets": [
+        ["css=.VfPpkd-Bz112c-RLmnJb:nth-child(4)", "css:finder"],
+        ["xpath=//body[@id='yDmH0d']/c-wiz/div/div[2]/main/div[2]/c-wiz/section/div[4]/div/div/div/div[2]/div/span/button/div[3]", "xpath:idRelative"],
+        ["xpath=//span/button/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37008055-deca-4e05-8884-5829c49d0f39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Ax4B8",
+      "targets": [
+        ["css=.Ax4B8", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//header[@id='gb']/div[2]/div[2]/div[2]/form/div/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c5962a8-62f7-4ec7-84c2-0381c782ab6e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.Ax4B8",
+      "targets": [
+        ["css=.Ax4B8", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//header[@id='gb']/div[2]/div[2]/div[2]/form/div/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Schaan"
+    }, {
+      "id": "688b80e8-63c6-4a0a-a48c-9b309942ba1f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.Ax4B8",
+      "targets": [
+        ["css=.Ax4B8", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//header[@id='gb']/div[2]/div[2]/div[2]/form/div/div/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a45bc392-bd96-4642-87cb-6141f8de12c0",
+      "comment": "",
+      "command": "assertPrompt",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fffd5058-d7d8-449b-9e43-1ced0508c58a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3d26ea03-96cb-4d9f-b91a-16961ba44278"]
+  }],
+  "urls": ["https://news.google.com/"],
+  "plugins": []
+}

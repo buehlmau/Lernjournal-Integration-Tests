@@ -1,0 +1,203 @@
+{
+  "id": "8499eb44-81c8-4f01-94f8-b326c20d07d1",
+  "version": "2.0",
+  "name": "2 Test AFI KT ZH",
+  "url": "https://www.zh.ch",
+  "tests": [{
+    "id": "7adab1c1-2377-4966-979f-b1ece1103779",
+    "name": "AFI Test",
+    "commands": [{
+      "id": "a21e5791-c097-40e4-877f-aebe1a75fe5e",
+      "comment": "",
+      "command": "open",
+      "target": "/de/finanzdirektion/amt-fuer-informatik.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6e386cf-5f95-4229-83ac-d55dc717218a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x1400",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d094b1d5-dcf6-4abd-a1be-0cb60bbecf53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mdl-anchornav__item:nth-child(2) > .mdl-anchornav__anchorlink",
+      "targets": [
+        ["css=.mdl-anchornav__item:nth-child(2) > .mdl-anchornav__anchorlink", "css:finder"],
+        ["xpath=(//a[contains(text(),'Kontakt')])[2]", "xpath:link"],
+        ["xpath=//div[@id='toc']/div/div/div/div/div/details/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#contact')])[2]", "xpath:href"],
+        ["xpath=//details/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13272ac1-5e0d-4717-8dfa-ff803c3759c3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=info@afi.zh.ch",
+      "targets": [
+        ["linkText=info@afi.zh.ch", "linkText"],
+        ["css=.mdl-contact_entry:nth-child(2) .mdl-contact_entry__mail", "css:finder"],
+        ["xpath=//a[contains(text(),'info@afi.zh.ch')]", "xpath:link"],
+        ["xpath=//div[@id='contact']/div/div/div/div/div[2]/div[3]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'mailto:info@afi.zh.ch')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'info@afi.zh.ch')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3326",
+      "windowTimeout": 2000
+    }, {
+      "id": "7c11a5c8-9897-40b2-b4c6-4adcbda7b5a8",
+      "comment": "Email überprüfen",
+      "command": "verifyText",
+      "target": "linkText=info@afi.zh.ch",
+      "targets": [
+        ["linkText=info@afi.zh.ch", "linkText"],
+        ["css=.mdl-contact_entry:nth-child(2) .mdl-contact_entry__mail", "css:finder"],
+        ["xpath=//a[contains(text(),'info@afi.zh.ch')]", "xpath:link"],
+        ["xpath=//div[@id='contact']/div/div/div/div/div[2]/div[3]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'mailto:info@afi.zh.ch')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'info@afi.zh.ch')]", "xpath:innerText"]
+      ],
+      "value": "@afi.zh.ch"
+    }, {
+      "id": "272a5312-f376-45e8-9a77-c27ae5f63eb4",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2407ed4a-74a9-48db-b338-b30f5a7908ff",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3326}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e295b8f0-3d95-45c8-87df-a9b4b663be1c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "afc667af-0160-4d27-8508-e93fa04d0f6f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6ac7266-a84c-42c4-a3e9-8f8eeb7d57cc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Route (Google)",
+      "targets": [
+        ["linkText=Route (Google)", "linkText"],
+        ["css=.mdl-contact_entry:nth-child(2) .mdl-contact_entry__show-route", "css:finder"],
+        ["xpath=//a[contains(text(),'Route (Google)')]", "xpath:link"],
+        ["xpath=//div[@id='contact']/div/div/div/div/div[2]/div/div[2]/address/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.google.com/maps/dir/?api=1&destination=47.38411845041334,8.541325984766846')]", "xpath:href"],
+        ["xpath=//address/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Route (Google)')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win904",
+      "windowTimeout": 2000
+    }, {
+      "id": "b1bf9b93-3845-4e6f-babe-4cec15462edf",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win904}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8362687-c5be-487d-b5ed-fe1d8e749172",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.gb_Ha",
+      "targets": [
+        ["css=.gb_Ha", "css:finder"],
+        ["xpath=//div[@id='gb']/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accounts.google.com/SignOutOptions?hl=de&continue=https://www.google.com/maps/dir/%3Fapi%3D1%26destination%3D47.38411845041334,8.541325984766846&service=local&ec=GBRAcQ')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6db2438-a753-4126-b7dd-9f55baa24e62",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.gb_Ha",
+      "targets": [
+        ["css=.gb_Ha", "css:finder"],
+        ["xpath=//div[@id='gb']/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accounts.google.com/SignOutOptions?hl=de&continue=https://www.google.com/maps/dir/%3Fapi%3D1%26destination%3D47.38411845041334,8.541325984766846&service=local&ec=GBRAcQ')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "959bf15e-9220-48dd-b650-40f18c516ded",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.gb_Lc",
+      "targets": [
+        ["css=.gb_Lc", "css:finder"],
+        ["xpath=//div[@id='gbwa']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.google.li/intl/de/about/products?tab=lh')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae263b35-039c-477d-87d0-1fd4ae172fb8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.gb_Lc",
+      "targets": [
+        ["css=.gb_Lc", "css:finder"],
+        ["xpath=//div[@id='gbwa']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.google.li/intl/de/about/products?tab=lh')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8e4fd86-4a41-4b3c-977a-fc66592f42f6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8110a04-333e-4938-b9b2-a2763510262f",
+      "comment": "",
+      "command": "click",
+      "target": "id=feedback-trigger-no",
+      "targets": [
+        ["id=feedback-trigger-no", "id"],
+        ["css=#feedback-trigger-no", "css:finder"],
+        ["xpath=//button[@id='feedback-trigger-no']", "xpath:attributes"],
+        ["xpath=//main[@id='main']/div/div/div[4]/div/div/div/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Nein')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c20aaad8-33c9-479a-b991-b3670a54b75f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7adab1c1-2377-4966-979f-b1ece1103779"]
+  }],
+  "urls": ["https://www.zh.ch/"],
+  "plugins": []
+}
